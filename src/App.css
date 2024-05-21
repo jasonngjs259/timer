@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.greyContainer {
+  position: absolute;
+  width: 50%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  border-radius: 1rem;
+  opacity: 0.5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.formContainer,
+.countdownContainer {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+button {
+  background-color: #0b5ed7;
+  border: none;
   color: white;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  border: 1px solid black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dismissButton {
+  background-color: lightgray;
+  color: black;
+}
+
+input {
+  border: 1px solid lightgray;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 5rem;
+}
+
+.colon {
+  font-size: 5rem;
+}
+
+.timerTextContainer {
+  font-size: 6rem;
+}
+
+.timeupTextContainer {
+  font-size: 4rem;
+}
+
+.redText {
+  color: red;
 }
