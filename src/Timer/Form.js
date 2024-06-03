@@ -26,9 +26,9 @@ class Form extends Component {
 
   secondsKeyPress(event) {
     if (this.state.showAlert) this.setState({ showAlert: false });
-    if (this.state.formSeconds < 10) {
-      this.setState({ formSeconds: "0" + event.target.value });
-    }
+    // if (this.state.formSeconds < 10) {
+    //   this.setState({ formSeconds: "0" + event.target.value });
+    // }
 
     if (event.target.value.length <= 2 && event.target.value < 60) {
       this.setState({ formSeconds: event.target.value });
